@@ -1,0 +1,10 @@
+
+sources:
+  - name: erp
+    description: Esse é o sistema ERP da Banvic com dados de cleintes, colaboradores, contas e transações
+    schema: erp_banvic
+    tables:
+      - name: localidades
+        description: Tabela fonte de localidades com informação de cidade e estado.
+      - name: clientes
+        description: Tabela fonte de clientes com informações pessoais de cada cliente da Banvic.
