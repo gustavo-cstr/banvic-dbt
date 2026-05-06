@@ -12,7 +12,7 @@ models:
       - name: email_cliente
         description: Endereço de e-mail do cliente.
       - name: tipo_cliente
-        description: Tipo do cliente (ex.: pessoa física, pessoa jurídica).
+        description: Tipo do cliente (ex. pessoa física, pessoa jurídica).
       - name: cpfcnpj_cliente
         description: CPF ou CNPJ do cliente sem pontuação.
       - name: ts_inclusao

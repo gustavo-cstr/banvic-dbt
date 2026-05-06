@@ -16,4 +16,4 @@ models:
       - name: dt_abertura
         description: Data de abertura da agência.
       - name: tipo_agencia
-        description: Tipo da agência (ex.: física, digital).
+        description: Tipo da agência (ex. física, digital).
