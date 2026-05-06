@@ -1,0 +1,27 @@
+models:
+  - name: stg_erp__clientes
+    description: Staging de clientes com tipagens corretas, limpeza de documentos e colunas renomeadas.
+    columns:
+      - name: pk_cliente
+        description: Chave primária do cliente.
+        data_tests:
+          - unique
+          - not_null
+      - name: fk_localidade
+        description: Chave estrangeira para a tabela de localidades.
+      - name: nome_cliente
+        description: Nome completo do cliente (primeiro nome + último nome).
+      - name: email_cliente
+        description: Endereço de e-mail do cliente.
+      - name: tipo_cliente
+        description: Tipo do cliente (ex. pessoa física, pessoa jurídica).
+      - name: ts_inclusao
+        description: Timestamp de inclusão do cliente no sistema.
+      - name: cpfcnpj_cliente
+        description: CPF ou CNPJ do cliente sem pontuação.
+      - name: dt_nascimento_cliente
+        description: Data de nascimento do cliente.
+      - name: endereco_cliente
+        description: Endereço completo do cliente.
+      - name: cep_cliente
+        description: CEP do cliente sem pontuação.

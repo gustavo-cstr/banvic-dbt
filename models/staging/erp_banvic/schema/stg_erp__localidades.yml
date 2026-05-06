@@ -1,0 +1,13 @@
+models:
+  - name: stg_erp__localidades
+    description: Staging de localidades com tipagens corretas e colunas renomeadas.
+    columns:
+      - name: pk_localidade
+        description: Chave primária da localidade.
+        data_tests:
+          - unique
+          - not_null
+      - name: cidade
+        description: Nome da cidade.
+      - name: uf
+        description: Sigla do estado (unidade federativa).
