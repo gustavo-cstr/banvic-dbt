@@ -1,0 +1,27 @@
+models:
+  - name: int_dimensao_colaboradores
+    description: Modelo intermediário de colaboradores enriquecido com cidade e estado a partir de localidades.
+    columns:
+      - name: pk_colaborador
+        description: Chave primária do colaborador.
+        data_tests:
+          - unique
+          - not_null
+      - name: fk_gerente
+        description: Chave estrangeira para o gerente do colaborador.
+      - name: nome_colaborador
+        description: Nome completo do colaborador.
+      - name: email_colaborador
+        description: Endereço de e-mail do colaborador.
+      - name: cpf_colaborador
+        description: CPF do colaborador sem pontuação.
+      - name: dt_nascimento_colaborador
+        description: Data de nascimento do colaborador.
+      - name: endereco_colaborador
+        description: Endereço completo do colaborador.
+      - name: cep_colaborador
+        description: CEP do colaborador sem pontuação.
+      - name: cidade_colaborador
+        description: Cidade onde o colaborador reside.
+      - name: uf_colaborador
+        description: Estado (UF) onde o colaborador reside.

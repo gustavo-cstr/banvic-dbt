@@ -1,0 +1,21 @@
+models:
+  - name: dim_agencias
+    description: Dimensão de agências com informações completas incluindo cidade e estado.
+    columns:
+      - name: pk_agencia
+        description: Chave primária da agência.
+        data_tests:
+          - unique
+          - not_null
+      - name: nome_agencia
+        description: Nome da agência.
+      - name: endereco_agencia
+        description: Endereço completo da agência.
+      - name: dt_abertura
+        description: Data de abertura da agência.
+      - name: tipo_agencia
+        description: Tipo da agência (ex.: física, digital).
+      - name: cidade_agencia
+        description: Cidade onde a agência está localizada.
+      - name: uf_agencia
+        description: Estado (UF) onde a agência está localizada.
