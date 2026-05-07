@@ -1,5 +1,5 @@
 with
-    data_spine as (
+    date_spine as (
         {{
             dbt_utils.date_spine(
                 datepart="day",

@@ -50,3 +50,21 @@ sources:
                 combination_of_columns:
                   - cod_colaborador
                   - cod_agencia
+
+      - name: transacoes
+        description: Tabela fonte de transações com informações de cada transação realizada na Banvic.
+        columns:
+          - name: cod_transacao
+            description: Chave primária da tabela transacoes.
+            data_tests:
+              - unique
+              - not_null
+
+      - name: propostas_credito
+        description: Tabela fonte de propostas de crédito com informações de cada proposta realizada na Banvic.
+        columns:
+          - name: cod_proposta
+            description: Chave primária da tabela propostas_credito.
+            data_tests:
+              - unique
+              - not_null
